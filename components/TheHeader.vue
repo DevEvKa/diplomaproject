@@ -5,11 +5,12 @@
         to="/"
         class="header__logo"
       >
-        <img
-          src="../assets/images/logo.svg"
+        <VSvgIcon
+          name="IconLogo"
+          size="lg"
           alt="Звёзды"
           class="header__logo-img"
-        >
+        />
       </NuxtLink>
       <NavigationMenu
         :links="navigationLinks"
@@ -20,13 +21,10 @@
 </template>
 
 <script setup lang="ts">
+  import VSvgIcon from '~/components/common/VSvgIcon.vue';
   import NavigationMenu from "~/components/NavigationMenu.vue";
 
   const navigationLinks = [
-    {
-      name: "Главная",
-      src: "/",
-    },
     {
       name: "About",
       src: "/about",
@@ -50,11 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-  }
-  
-
-  &__logo-img {
-    width: 50px;
   }
 }
 

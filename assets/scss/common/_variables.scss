@@ -1,5 +1,44 @@
 //цвета
 
+$color-accent-1: #3366CC;
+$color-accent-1-dark: #1f3d7a; //30 rgba($color-accent-1, .3);
+$color-accent-1-light: #85a3e0; //70
+$color-accent-1-light-extra: #d6e0f5; //90
+
+$color-accent-2: #669933;
+$color-accent-2-dark: rgba($color-accent-2, .3);
+$color-accent-2-light: rgba($color-accent-2, .7);
+$color-accent-2-light-extra: rgba($color-accent-2, .9);
+
+$color-accent-3: #FF4242;
+$color-accent-3-dark: rgba($color-accent-3, .3);
+$color-accent-3-light: rgba($color-accent-3, .7);
+$color-accent-3-light-extra: rgba($color-accent-3, .9);
+
+$color-accent-4: #FF9933;
+$color-accent-4-dark: rgba($color-accent-4, .3);
+$color-accent-4-light: rgba($color-accent-4, .7);
+$color-accent-4-light-extra: rgba($color-accent-4, .9);
+
+$color-sucess: #3AA636;
+$color-sucess-dark: #1C511A;
+$color-sucess-light: #D9F3D8;
+$color-error: #CB0000;
+$color-error-dark: #760000;
+$color-error-light: #FFCCCC;
+
+
+$color-black: #161A1E;
+$color-white: #FFFFFF;
+
+
+$color-grey: #DFDFDF;
+$color-grey-dark: #BCBCBC;
+$color-grey-dark-extra: #A6A6A6;
+$color-grey-light: #F4F4F4;
+$color-grey-light-extra: #F9F8F8;
+
+
 $primary-dark: #161A1E;
 $primary-light: #ffffff;
 $secondary: #e4a79d;
@@ -23,3 +62,6 @@ $roboto: 'Roboto, sans-serif';
 //скругления
 
 //тени
+
+//переходы
+$default-transition: .3s ease-in-out;
