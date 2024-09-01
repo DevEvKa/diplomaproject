@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="border: 5px solid green">
     <TheHeader />
     <main class="main">
       <div class="container">

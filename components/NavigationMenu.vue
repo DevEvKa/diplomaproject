@@ -15,7 +15,7 @@
   interface Props {
     links: {name: string, src: string}[]
   }
-const props = defineProps<Props>()
+  const props = defineProps<Props>()
 </script>
 
 <style lang="scss">
