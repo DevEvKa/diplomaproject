@@ -113,6 +113,7 @@ function onClick() {
 .v-button {
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 
   &.is-rounded {
     border-radius: 12px;
@@ -120,6 +121,16 @@ function onClick() {
     @include sm {
       border-radius: 8px;
     }
+  }
+
+  &.is-link {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &.is-disabled {
+    opacity: 0.6;
+    pointer-events: none;
   }
 
   //размеры.начало
