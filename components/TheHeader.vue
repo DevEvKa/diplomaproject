@@ -26,6 +26,10 @@
 
   const navigationLinks = [
     {
+      name: "Журнал",
+      src: "/articles",
+    },
+    {
       name: "About",
       src: "/about",
     },

@@ -4,35 +4,35 @@
     :class="{'is-left-image': isLeftImage}"
     >
     <div class="block-text-image-50__text">
-      <h3 class="block-text-image-50__subject">{{ item.subject }}</h3>
+      <slot name="block-text-image-50"></slot>
+      <!-- <h3 class="block-text-image-50__subject">{{ item.subject }}</h3>
       <h3 class="block-text-image-50__title">{{ item.title }}</h3>
-      <p class="block-text-image-50__title">{{ item.text }}</p>
+      <p class="block-text-image-50__title">{{ item.text }}</p> -->
     </div>
     <div class="block-text-image-50__image">
       <img
-        :src="item.image.src"
-        :alt="item.image.alt"
+        :src="image.src"
+        :alt="image.alt"
       >
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-interface TextImage50Item {
-  subject: string,
-  title: string,
-  text: string,
+
+export interface TextImage50Item {
   image: {
     src: string,
     alt: string,
   },
+  isLeftImage?: boolean,
 };
-const props = defineProps<{
-  item: TextImage50Item;
-  isLeftImage: boolean;
-}>();
 
-console.log(props)
+const props = withDefaults(defineProps<TextImage50Item>(), {
+  isLeftImage: false,
+})
+
+
 </script>
 
 <style lang="scss">
@@ -47,6 +47,10 @@ console.log(props)
     flex-direction: column;
   }
 
+  &.is-left-image {
+    flex-direction: row-reverse;
+  }
+
 
   &__text {
     width: 50%;
@@ -59,10 +63,9 @@ console.log(props)
 
   &__image {
     width: 50%;
-    height: 350px;
 
     img {
-      object-fit: contain;
+      object-fit: cover;
       width: 100%;
       height: 100%;
     }
