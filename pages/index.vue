@@ -20,6 +20,7 @@
               пройти тестирование
           </VButton>
           
+          
         </div>
       </div>
     </section>
