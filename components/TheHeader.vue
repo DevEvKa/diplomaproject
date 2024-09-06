@@ -29,13 +29,13 @@
       name: "Журнал",
       src: "/articles",
     },
+    // {
+    //   name: "About",
+    //   src: "/about",
+    // },
     {
-      name: "About",
-      src: "/about",
-    },
-    {
-      name: "Users",
-      src: "/users",
+      name: "Задания",
+      src: "/tasks",
     },
     {
       name: "Login",
