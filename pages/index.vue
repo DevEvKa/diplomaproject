@@ -12,15 +12,12 @@
         <p class="h5 main__banner-text">Присоединяйся к нашим увлекательным урокам и открой для себя мир русского языка через игры и забавные задания!</p>
         <div class="main__banner-buttons">
           <VButton
+            text="пройти тестирование"
             to="/exam"
             color="white"
             rounded
             class="main__banner-button"
-          >
-              пройти тестирование
-          </VButton>
-          
-          
+          />
         </div>
       </div>
     </section>

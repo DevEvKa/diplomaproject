@@ -5,9 +5,6 @@
     >
     <div class="block-text-image-50__text">
       <slot name="block-text-image-50"></slot>
-      <!-- <h3 class="block-text-image-50__subject">{{ item.subject }}</h3>
-      <h3 class="block-text-image-50__title">{{ item.title }}</h3>
-      <p class="block-text-image-50__title">{{ item.text }}</p> -->
     </div>
     <div class="block-text-image-50__image">
       <img

@@ -14,13 +14,14 @@
     <span
       class="v-button__text"
     >
-      <slot />
+      {{ text }}
     </span>
 
   </Component>
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import type { RouteLocationRaw } from 'vue-router';
 // import type { NuxtLinkProps } from '#app';
 // import { NuxtLinkLocale } from '#components';
@@ -31,6 +32,7 @@ const linesArr = ['two-lines'] as const;
 const colors = ['transparent', 'white', 'black', 'gray'] as const;
 
 export type VButtonProps = {
+  text: string,
   size?: typeof sizes[number];
   to?: string | RouteLocationRaw | null;
   target?: string;
@@ -49,6 +51,7 @@ export type VButtonProps = {
 // } & DimensionProps;
 
 const props = withDefaults(defineProps<VButtonProps>(), {
+  text: '',
   to: null,
   target: '_self',
   rounded: false,
@@ -150,9 +153,5 @@ function onClick() {
   }
   //цвета.конец
 
-  
-
 }
-
-
 </style>
