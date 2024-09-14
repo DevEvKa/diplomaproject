@@ -37,10 +37,10 @@
       name: "Задания",
       src: "/tasks",
     },
-    {
-      name: "Login",
-      src: "/login",
-    },
+    // {
+    //   name: "Login",
+    //   src: "/login",
+    // },
 
   ]
 

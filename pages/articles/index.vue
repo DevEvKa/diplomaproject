@@ -17,12 +17,11 @@
 				<p class="articles__item-text">{{ item.text }}</p>
 				<VButton
 					:to="`/articles/${item.id}`"
+          			text="Подробнее..."
 					type="link"
 					color="gray"
 					class="articles__item-link"
-				>
-					Подробнее...
-				</VButton>
+				/>
 			</template>	
 		</BlockTextImage50>
 

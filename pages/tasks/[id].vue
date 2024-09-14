@@ -7,12 +7,11 @@
         class="task__rule-text"
       />
       <VButton
+        text="Перейти к заданию"
         color="gray"
         class="task__rule-button"
         @click="openTask"
-      >
-        Перейти к заданию
-      </VButton>
+      />
     </div>
     <div
       v-if="isTaskOpened"
@@ -32,12 +31,11 @@
       </div>
       
       <VButton
+        text="Проверить ответы"
         color="gray"
         class="task__item-button"
         @click="checkAnswers"
-      >
-        Проверить ответы
-      </VButton>
+      />
     </div>
   </section>
   </template>
